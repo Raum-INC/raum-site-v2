@@ -1,5 +1,5 @@
 import { RiInstagramFill } from "react-icons/ri";
-import logo from "../assets/logo.svg";
+import logo from "../assets/Logo.svg";
 import aws from "../assets/aws.svg";
 import { MdEmail } from "react-icons/md";
 import { FaSquareXTwitter } from "react-icons/fa6";
