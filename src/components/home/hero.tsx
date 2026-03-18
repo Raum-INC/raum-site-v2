@@ -43,7 +43,9 @@ function StatItem({
         {count}
         <span className="text-white font-light ml-1">{suffix}</span>
       </div>
-      <p className="text-[#aaaaaa] text-xs tracking-wide uppercase">{label}</p>
+      <p className="text-[#aaaaaa] text-xs tracking-wide text-center uppercase">
+        {label}
+      </p>
     </div>
   );
 }
@@ -159,7 +161,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.7 }}
-          className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-0 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-2 py-2 w-full max-w-2xl"
+          className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-0 bg-white/10 backdrop-blur-md border border-white/20 rounded-md lg:rounded-full px-2 py-4 lg:py-2 w-full max-w-2xl"
         >
           <div className="flex items-center gap-2 px-4 py-2 flex-1 border-b sm:border-b-0 sm:border-r border-white/20">
             <IoLocationOutline className="text-white/60 shrink-0" size={16} />
@@ -225,7 +227,7 @@ export default function HeroSection() {
             <div className="text-white font-bold text-3xl sm:text-4xl tracking-tight">
               4.1<span className="text-white font-light">/5</span>
             </div>
-            <p className="text-[#aaaaaa] text-xs tracking-wide uppercase">
+            <p className="text-[#aaaaaa] text-center text-xs tracking-wide uppercase">
               Average Rating
             </p>
           </div>
