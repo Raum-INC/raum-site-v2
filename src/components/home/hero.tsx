@@ -1,11 +1,9 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { IoLocationOutline, IoCalendarOutline } from "react-icons/io5";
-import { HiMenuAlt3, HiX } from "react-icons/hi";
 import { MdVerified } from "react-icons/md";
 import { IoIosArrowForward, IoIosArrowDown } from "react-icons/io";
 import heroImage from "../../assets/home/hero.png";
-import logo from "../../assets/Logo.svg";
 
 function useCountUp(
   target: number,
@@ -54,13 +52,6 @@ const navLinks = ["About us", "Contact", "Invest", "Blog"];
 
 export default function HeroSection() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 40);
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
   const [statsVisible, setStatsVisible] = useState(false);
   const statsRef = useRef<HTMLDivElement>(null);
 
@@ -88,40 +79,6 @@ export default function HeroSection() {
       </div>
 
       {/* NAVBAR — fixed */}
-      <nav
-        className={`fixed top-0 left-0 right-0 z-50 w-full px-6 sm:px-10 py-5 flex items-center justify-between transition-all duration-300 ${scrolled ? "bg-black/40 backdrop-blur-md border-b border-white/5" : "bg-transparent border-b border-transparent"}`}
-      >
-        <img src={logo} alt="raum logo" className="w-30 h-auto" />
-
-        <div className="flex flex-row items-center gap-12">
-          <div className="hidden md:flex items-center gap-8">
-            {navLinks.map((link) => (
-              <a
-                key={link}
-                href="#"
-                className="text-white text-sm font-medium hover:text-[#aaaaaa] transition-colors"
-              >
-                {link}
-              </a>
-            ))}
-          </div>
-
-          <div className="flex items-center gap-4">
-            <a
-              href="#"
-              className="hidden sm:inline-flex bg-[#0000FF] text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-blue-700 transition-colors"
-            >
-              Check listings
-            </a>
-            <button
-              className="md:hidden text-white"
-              onClick={() => setMenuOpen(!menuOpen)}
-            >
-              {menuOpen ? <HiX size={26} /> : <HiMenuAlt3 size={26} />}
-            </button>
-          </div>
-        </div>
-      </nav>
 
       {/* Mobile dropdown */}
       <AnimatePresence>
