@@ -5,6 +5,9 @@ import PopularLocations from "../components/guest/popularLocations";
 import TrustRaum from "../components/guest/trustRaum";
 import AdvanceBooking from "../components/guest/advancedBooking";
 import { StepsToBook } from "../components/guest/bokingSteps";
+import Footer from "../layout/footer";
+import FAQ from "../components/home/faq";
+import { Download } from "../components/guest/download";
 
 const GuestPage = () => {
   return (
@@ -16,6 +19,9 @@ const GuestPage = () => {
       <TrustRaum />
       <AdvanceBooking />
       <StepsToBook />
+      <Download />
+      <FAQ />
+      <Footer />
     </main>
   );
 };

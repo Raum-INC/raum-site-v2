@@ -9,7 +9,7 @@ const navLinks = [
   { label: "Our Listings", to: "/listings" },
   { label: "Guest", to: "/guest" },
   { label: "Host", to: "/host" },
-  { label: "Invest", to: "#" },
+  { label: "Invest", to: "/invest" },
   { label: "About us", to: "/about" },
   { label: "Contact", to: "/contact" },
   { label: "Blog", to: "#" },
@@ -57,7 +57,7 @@ export const Navbar = ({ theme = "dark" }: NavbarProps) => {
           <img
             src={isLight ? logoBlack : logo}
             alt="raum logo"
-            className="w-30 h-auto"
+            className="w-25 lg:w-30 h-auto"
           />
         </Link>
 
