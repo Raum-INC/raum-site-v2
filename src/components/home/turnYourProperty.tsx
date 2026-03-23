@@ -154,7 +154,7 @@ export const TurnPropertyCTA = () => {
           variants={cardVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          className="w-full max-w-xs rounded-2xl p-5 sm:p-6 backdrop-blur-lg lg:min-w-[360px] rotate-3 bg-white/5 shadow-xl"
+          className="w-full max-w-xs rounded-2xl p-5 sm:p-6 backdrop-blur-lg lg:min-w-[360px] lg:rotate-3 bg-white/5 shadow-xl"
           style={{
             border: "1px solid rgba(255,255,255,0.08)",
             WebkitBackdropFilter: "blur(16px)",

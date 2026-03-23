@@ -56,7 +56,7 @@ const titleVariants = {
 
 export const ShortletsFeatures = () => {
   return (
-    <section className="flex lg:min-h-screen 2xl:min-h-fit flex-col items-center justify-center bg-[#151419] px-8 py-16">
+    <section className="flex lg:min-h-screen 2xl:min-h-fit flex-col items-center justify-center bg-[#151419] px-4 sm:px-8 py-16">
       <motion.h2
         variants={titleVariants}
         initial="hidden"
@@ -73,7 +73,7 @@ export const ShortletsFeatures = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: "-40px" }}
-        className="grid w-full max-w-245 grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3"
+        className="grid w-full max-w-245 grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-3"
       >
         {features.map(({ label, icon: Icon }) => (
           <motion.div
@@ -81,13 +81,12 @@ export const ShortletsFeatures = () => {
             variants={cardVariants}
             whileHover={{ y: -3 }}
             transition={{ type: "spring", stiffness: 300, damping: 20 }}
-            className="flex items-center justify-between rounded-2xl border border-[#0000FF] px-6 py-10"
+            className="flex-col flex md:flex-row items-center justify-between rounded-2xl border border-[#0000FF] md:px-4 py-6 sm:px-2 sm:py-2"
           >
-            <span className="max-w-35 text-lg font-medium leading-[1.35] text-[#c8cfe0]">
+            <span className="text-base sm:text-lg font-medium leading-[1.35] text-[#c8cfe0] max-w-[60%]">
               {label}
             </span>
-
-            <Icon className="text-7xl text-[#2563eb]" />
+            <Icon className="text-5xl sm:text-7xl text-[#2563eb] shrink-0" />
           </motion.div>
         ))}
       </motion.div>

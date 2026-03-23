@@ -12,7 +12,7 @@ export default function HeroSection() {
         transition={{ duration: 0.6, ease: "easeOut" }}
         className="text-black font-extrabold text-4xl sm:text-6xl lg:text-7xl text-center leading-tight tracking-tight max-w-4xl"
       >
-        Book an apartment and seamless as possible
+        Book an apartment as seamless as possible
       </motion.h1>
 
       {/* Subtitle */}

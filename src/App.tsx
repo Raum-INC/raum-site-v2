@@ -3,6 +3,8 @@ import Home from "./pages/homePage";
 import About from "./pages/aboutUsPage";
 import { ContactUs } from "./pages/contactUsPage";
 import GuestPage from "./pages/guestPage";
+import InvestPage from "./pages/investPage";
+import HostPage from "./pages/hostPage";
 
 export default function App() {
   return (
@@ -11,6 +13,8 @@ export default function App() {
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<ContactUs />} />
       <Route path="/guest" element={<GuestPage />} />
+      <Route path="/invest" element={<InvestPage />} />
+      <Route path="/host" element={<HostPage />} />
     </Routes>
   );
 }
