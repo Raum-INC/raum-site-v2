@@ -4,6 +4,7 @@ import { HiMenuAlt3, HiX } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import logo from "../assets/Logo.svg";
 import logoBlack from "../assets/LogoBlack.png";
+import useModalStore from "../store/modalStore";
 
 const navLinks = [
   { label: "Our Listings", to: "/listings" },
@@ -24,6 +25,7 @@ interface NavbarProps {
 export const Navbar = ({ theme = "dark" }: NavbarProps) => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const { openModal } = useModalStore();
 
   const isLight = theme === "light";
 
@@ -52,7 +54,6 @@ export const Navbar = ({ theme = "dark" }: NavbarProps) => {
           scrolled ? scrolledBg : "bg-transparent border-b border-transparent"
         }`}
       >
-        {/* Logo — swap based on theme */}
         <Link to="/">
           <img
             src={isLight ? logoBlack : logo}
@@ -79,12 +80,12 @@ export const Navbar = ({ theme = "dark" }: NavbarProps) => {
 
           {/* CTA + hamburger */}
           <div className="flex items-center gap-4">
-            <Link
-              to="/listings"
+            <button
+              onClick={openModal}
               className="hidden sm:inline-flex bg-[#0000FF] text-white text-sm font-semibold px-5 py-2.5 rounded-full hover:bg-blue-700 transition-colors"
             >
               Earn More
-            </Link>
+            </button>
             <button
               className={`md:hidden ${isLight ? "text-black" : "text-white"}`}
               onClick={() => setMenuOpen(!menuOpen)}
@@ -136,13 +137,15 @@ export const Navbar = ({ theme = "dark" }: NavbarProps) => {
                 </Link>
               ),
             )}
-            <Link
-              to="/listings"
+            <button
+              onClick={() => {
+                setMenuOpen(false);
+                openModal();
+              }}
               className="bg-[#0000FF] text-white text-sm font-semibold px-5 py-3 rounded-full text-center"
-              onClick={() => setMenuOpen(false)}
             >
               Earn More
-            </Link>
+            </button>
           </motion.div>
         )}
       </AnimatePresence>
