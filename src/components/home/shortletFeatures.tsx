@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { IoGameControllerOutline } from "react-icons/io5";
 import {
   MdOutlineElectricBolt,
   MdFitnessCenter,
@@ -14,13 +15,14 @@ import { TbSnowflake } from "react-icons/tb";
 const features = [
   { label: "Air Conditioning", icon: TbSnowflake },
   { label: "24/7 Power Supply", icon: MdOutlineElectricBolt },
-  { label: "State-of-the-art Gymnasium", icon: MdFitnessCenter },
+  { label: "State-of-the-art Gym", icon: MdFitnessCenter },
   { label: "Fully Equipped Kitchen", icon: MdKitchen },
   { label: "Parking", icon: MdLocalParking },
   { label: "Security", icon: MdSecurity },
   { label: "WiFi", icon: MdWifi },
   { label: "Swimming Pool", icon: MdPool },
   { label: "Hot Bath", icon: MdHotTub },
+  { label: "Game", icon: IoGameControllerOutline },
 ];
 
 const containerVariants = {

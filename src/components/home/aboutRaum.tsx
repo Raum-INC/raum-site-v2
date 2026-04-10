@@ -44,10 +44,9 @@ export const AboutRaum: React.FC = (): JSX.Element => {
             itemProp="description"
             className="text-[#aaaaaa] text-sm sm:text-lg leading-relaxed"
           >
-            Raum Africa is the premier global hospitality super-platform. We're
-            crafting spaces for people, providing superior alternatives for
-            every accommodation need — including vacation rentals, shared homes,
-            unique stays, and experiences in various destinations.
+            Raum Africa is an infrastructure for urban living, redefining the
+            short-term rental serviced apartment market across Lagos and
+            Nairobi, through technology-driven approach. destinations.
           </p>
         </div>
 

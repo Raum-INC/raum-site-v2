@@ -42,14 +42,10 @@ export default function OurServices() {
               Verified Shortlets
             </h2>
             <p className="text-[#FBFBFB] text-xs font-normal leading-relaxed line-clamp-4">
-              Our all-in-one platform helps property owners manage bookings,
-              pricing, and guest communication effortlessly. With built-in
-              automation and performance insights, Raum empowers hosts to
-              deliver consistent, high-quality stays.
+              With Raum Africa, every apartmet is rigorously verified, inspected
+              and meticulous to ensure that all amenities, facilities and
+              features appear exactly accurate.
             </p>
-            <a href="#" className="text-[#0000FF] text-xs underline">
-              More details
-            </a>
           </div>
         </div>
 
@@ -62,17 +58,14 @@ export default function OurServices() {
             <h2 className="text-white font-bold mt-3 text-lg leading-snug">
               Eco-Smart Short-Term Rentals
             </h2>
-            <p className="text-[#FBFBFB] text-xs font-normal leading-relaxed line-clamp-4">
+            <p className="text-[#FBFBFB] text-xs font-normal leading-relaxed line-clamp-6">
               Book eco-smart short-term rentals in top cities from Lagos to
-              Nairobi and beyond. Our fully furnished serviced apartments are
-              equipped with smart-home technology, IoT-enabled climate control,
-              and sustainable features. Whether you're traveling for work or
+              Nairobi. Our fully furnished serviced apartments are equipped with
+              smart-home technology, IoT-enabled climate control, and
+              sustainable features. Whether you're traveling for work or
               leisure, enjoy a comfortable, tech-enabled stay with trusted
               support and seamless booking.
             </p>
-            <a href="#" className="text-[#0000FF] text-xs underline">
-              More details
-            </a>
           </div>
           <img
             src={service3}
@@ -122,9 +115,6 @@ export default function OurServices() {
               secure your next income-generating property, locally or across
               emerging markets.
             </p>
-            <a href="#" className="text-[#0000FF] text-xs underline">
-              More details
-            </a>
           </div>
 
           <img
