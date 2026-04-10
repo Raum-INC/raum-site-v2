@@ -42,17 +42,15 @@ const HostCTA: React.FC = () => {
           </ul>
         </div>
 
-        {/* Button */}
         <a
-          href="#"
-          className="flex-shrink-0 flex items-center gap-2 border-2 border-white text-white text-sm font-semibold px-6 py-3 rounded-full hover:bg-white hover:text-[#0000FF] transition-colors whitespace-nowrap"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSedjzWiVEHbKq0v88NTKaq3F-ydo2yghP5iu6Ntp4Oxj9k7yw/viewform"
+          className="shrink-0 flex items-center gap-2 border-2 border-white text-white text-sm font-semibold px-6 py-3 rounded-full hover:bg-white hover:text-[#0000FF] transition-colors whitespace-nowrap"
         >
           <MdAssignment size={18} />
           Fill the form!
         </a>
       </motion.div>
-
-      {/* Card 2 — Be your own boss */}
+      {/* Card 2 — Be your own boss */}f
       <motion.div
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -91,7 +89,7 @@ const HostCTA: React.FC = () => {
           <img
             src={hostMockup}
             alt="Raum host app"
-            className="w-[240px] sm:w-[280px] lg:w-[320px] h-auto object-contain"
+            className="w-60 sm:w-70 lg:w-[320px] h-auto object-contain"
           />
         </div>
       </motion.div>

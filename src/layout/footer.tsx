@@ -35,14 +35,21 @@ export default function Footer() {
           {/* Social icons */}
           <div className="flex items-center gap-8">
             {[
-              { icon: MdEmail, href: "#" },
-              { icon: RiInstagramFill, href: "#" },
-              { icon: FaSquareXTwitter, href: "#" },
-              { icon: BsLinkedin, href: "#" },
+              { icon: MdEmail, href: "hello@raum.africa" },
+              {
+                icon: RiInstagramFill,
+                href: "https://www.instagram.com/raumafrica/",
+              },
+              { icon: FaSquareXTwitter, href: "https://x.com/raumafrica" },
+              {
+                icon: BsLinkedin,
+                href: "https://www.linkedin.com/company/rauminc",
+              },
             ].map(({ icon: Icon, href }, i) => (
               <a
                 key={i}
                 href={href}
+                target="_blank"
                 className=" text-white hover:border-white transition-all hover:text-white/80 duration-200"
               >
                 <Icon size={24} />
