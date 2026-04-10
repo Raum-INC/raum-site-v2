@@ -19,14 +19,15 @@ export function InvestHero() {
         className="mt-8 text-[#444444] text-base sm:text-lg leading-relaxed max-w-xl"
       >
         Earn up to 30% returns in 12 months with Africa's fastest-growing Airbnb
-        investment model. We handle everything—you earn passive income
+        investment model. We handle everything, you earn passive income
         hassle-free.
       </motion.p>
 
       <motion.a
-        href="#"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSdBDIM05gUcwl0-CK6p-6tJuccG4ynv0w3ba01rzKgVeU9yPA/viewform"
         initial={{ opacity: 0, y: 16 }}
         animate={{ opacity: 1, y: 0 }}
+        target="_blank"
         transition={{ duration: 0.6, delay: 0.35, ease: "easeOut" }}
         className="mt-10 inline-flex items-center justify-center bg-black text-white text-sm sm:text-base font-bold px-10 py-4 rounded-full hover:bg-neutral-800 transition-colors"
       >
