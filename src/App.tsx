@@ -6,10 +6,12 @@ import GuestPage from "./pages/guestPage";
 import InvestPage from "./pages/investPage";
 import HostPage from "./pages/hostPage";
 import EarnMoreModal from "./components/earnModal";
+import ScrollToTop from "./components/scrollToUp";
 
 export default function App() {
   return (
     <>
+      <ScrollToTop />
       <EarnMoreModal />
 
       <Routes>

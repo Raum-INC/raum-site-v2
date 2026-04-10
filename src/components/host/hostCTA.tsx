@@ -35,7 +35,7 @@ const HostCTA: React.FC = () => {
                 key={i}
                 className="flex items-start gap-2 text-white text-sm leading-relaxed"
               >
-                <span className="mt-2 w-1.5 h-1.5 rounded-full bg-white flex-shrink-0" />
+                <span className="mt-2 w-1.5 h-1.5 rounded-full bg-white shrink-0" />
                 {point}
               </li>
             ))}
@@ -70,13 +70,15 @@ const HostCTA: React.FC = () => {
           </p>
           <div className="flex flex-wrap gap-4">
             <a
-              href="#"
+              target="_blank"
+              href="https://play.google.com/store/apps/details?id=com.raumhq.raum"
               className="bg-white text-[#0000FF] font-bold text-sm px-8 py-3.5 rounded-full hover:bg-white/90 transition-colors"
             >
               Android
             </a>
             <a
-              href="#"
+              target="_blank"
+              href="https://apps.apple.com/us/app/raum-africa/id6514297891?"
               className="bg-white text-[#0000FF] font-bold text-sm px-8 py-3.5 rounded-full hover:bg-white/90 transition-colors"
             >
               Apple

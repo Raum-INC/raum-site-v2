@@ -55,9 +55,13 @@ export default function DownloadApps() {
             Scan the QR code with your phone camera <br /> to download the Raum
             app. <br /> Available for iOS and Android devices.
           </p>
-          <button className="bg-white/20 cursor-pointer hover:bg-white/30 transition-colors duration-200 text-white text-sm font-medium px-6 py-3 rounded-full">
+          <a
+            href="https://apps.apple.com/us/app/raum-africa/id6514297891"
+            target="_blank"
+            className="bg-white/20 cursor-pointer hover:bg-white/30 transition-colors duration-200 text-white text-sm font-medium px-6 py-3 rounded-full"
+          >
             Get the app
-          </button>
+          </a>
         </div>
 
         {/* Phone mockup */}
